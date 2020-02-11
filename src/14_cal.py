@@ -32,3 +32,23 @@ import calendar
 from datetime import datetime
 
 #user input
+mo = input('Please enter a month in the following format (1 - 12): ')
+yr = input('Please enter a year in the following format (yyyy): ')
+
+#getting current year/month
+date = datetime.today()
+
+
+def cal(mo, yr):
+    if mo == '':
+        mo = date.month
+    else:
+        mo = int(mo)
+    if yr == '':
+        yr = date.month
+    else:
+        yr = int(yr)
+
+    print(calendar.month(yr, mo))
+
+cal(mo, yr)
