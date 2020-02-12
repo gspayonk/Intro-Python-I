@@ -14,8 +14,8 @@ class LatLon:
 # YOUR CODE HERE
 class Waypoint(LatLon):
     def _init_(self, name, lat, lon):
-        super()._init_(lat, lon)
         self.name = name
+        super()._init_(lat, lon)
     
     def _str_(self):
         return f'{self.name} is at ({self.lat}, {self.lon})'
